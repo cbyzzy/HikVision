@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.cbyzzy.model.mapper.CameraFlowMapper">
+  <resultMap id="BaseResultMap" type="com.github.cbyzzy.model.entity.CameraFlow">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="camera_id" jdbcType="INTEGER" property="cameraId" />
+    <result column="camera_ipc" jdbcType="VARCHAR" property="cameraIpc" />
+    <result column="tasker" jdbcType="VARCHAR" property="tasker" />
+    <result column="flow_type" jdbcType="INTEGER" property="flowType" />
+    <result column="rtsp" jdbcType="VARCHAR" property="rtsp" />
+    <result column="rtmp" jdbcType="VARCHAR" property="rtmp" />
+    <result column="flv" jdbcType="VARCHAR" property="flv" />
+    <result column="ws_flv" jdbcType="VARCHAR" property="wsFlv" />
+    <result column="hls" jdbcType="VARCHAR" property="hls" />
+    <result column="client" jdbcType="INTEGER" property="client" />
+    <result column="flow_record" jdbcType="INTEGER" property="flowRecord" />
+    <result column="record" jdbcType="VARCHAR" property="record" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>

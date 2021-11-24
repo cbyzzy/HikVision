@@ -1,0 +1,5 @@
+# 指定环境配置文件，dev=开发环境，Test=测试环境，pro=生产环境
+spring.profiles.active: dev
+spring:
+  messages:
+    basename: i18n/messages
