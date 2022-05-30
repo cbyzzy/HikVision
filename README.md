@@ -30,6 +30,10 @@
     
     - 项目引用了三个外部jar包，包括examples(海康相关)、Jna(dll/so库调用)、FFmpegCommandHandler(FFmpeg命令执行器),三个jar包放在了resources/jar  
       下面，推荐将这三个jar包通过maven安装到仓库中调用以避免产生部署时依赖找不到的问题
+
+    - ffmpeg是必不可缺的运行环境组件,用于编解码摄像头的视频流,loadFFmpeg.properties就是用来配置本地的ffmpeg执行路径的,因此需要你本地环境中有安装ffmpeg才可以
+##### 其它事项
+    - 加入了前端的页面示例(不是专业搞前端的,所以只是个页面的demo,也不是完整的前端工程,仅供参考),我这里用的是liveplayer,功能稍微多一点,不习惯的话也可以用flv.js代替
 ##### 交流
     - 有具体疑问和建议可以通过邮件联系：cbyzzy@sina.com
 

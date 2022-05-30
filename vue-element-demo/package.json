@@ -1,0 +1,37 @@
+{
+  "name": "camera-demo",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "",
+    "start": "npm run dev",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "@liveqing/liveplayer": "2.4.7",
+    "axios": "^0.21.1",
+    "element-ui": "^2.13.2",
+    "vue": "^2.5.2",
+    "vue-codemirror-lite": "^1.0.4",
+    "vue-fullscreen": "2.6.1",
+    "vue-i18n": "^8.0.0",
+    "vue-router": "^3.0.6",
+    "vue-video-player": "^5.0.2"
+  },
+  "devDependencies": {
+    "vue-loader": "^13.7.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.2",
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

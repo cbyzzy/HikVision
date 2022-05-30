@@ -5,32 +5,44 @@ import javax.persistence.*;
 
 @Table(name = "t_camera")
 public class Camera {
+    //主键id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    //设备编号（或者序列号之类的）
     private String no;
 
+    //设备类型（0-摄像头 1-NVR录像机）
     private Integer type;
 
+    //摄像头设备所属NVR录像机设备的id
     @Column(name = "belong_nvr_id")
     private Integer belongNvrId;
 
+    //登录用户名
     private String account;
 
+    //登录密码
     private String password;
 
+    //ip地址
     private String ip;
 
+    //端口
     private String port;
 
+    //设备名称
     private String name;
 
+    //设备是否支持云台控制
     @Column(name = "ptz_control")
     private Byte ptzControl;
 
+    //设备启用标志
     private Byte enable;
 
+    //这个是我用来标识这个摄像头是属于哪个房间的
     @Column(name = "tester_id")
     private String testerId;
 
